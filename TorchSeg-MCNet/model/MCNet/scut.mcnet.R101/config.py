@@ -21,7 +21,7 @@ C.seed = 12345
 
 """please config ROOT_dir and user when u first using"""
 C.repo_name = 'TorchSeg-MCNet'
-C.abs_dir = osp.realpath(".")
+C.abs_dir = osp.realpath(__file__)
 C.this_dir = C.abs_dir.split(osp.sep)[-1]
 C.root_dir = C.abs_dir[:C.abs_dir.index(C.repo_name) + len(C.repo_name)]
 C.log_dir = osp.abspath(osp.join(C.root_dir, 'log', C.this_dir))
